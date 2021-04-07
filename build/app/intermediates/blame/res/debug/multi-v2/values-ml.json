@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/sg24x7/github/Flutter-MVVM/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ml/values-ml.xml",
+            "map": [
+                {
+                    "source": "/home/sg24x7/.gradle/caches/transforms-2/files-2.1/a0a63af81e98fe94130d3fe67516ce7e/core-1.6.0-alpha01/res/values-ml/values-ml.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

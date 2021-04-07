@@ -12,7 +12,6 @@ class Media {
       this.artworkUrl,
       this.previewUrl});
 
-
   factory Media.fromJson(Map<String, dynamic> json) {
     return Media(
       artistName: json['artistName'] as String?,

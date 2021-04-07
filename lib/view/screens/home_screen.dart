@@ -13,8 +13,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
-
   Widget getMediaWidget(BuildContext context, ApiResponse apiResponse) {
     List<Media>? mediaList = apiResponse.data as List<Media>?;
     switch (apiResponse.status) {
@@ -28,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
               flex: 8,
               child: PlayerListWidget(mediaList!, (Media media) {
                 Provider.of<MediaViewModel>(context, listen: false)
-                .setSelectedMedia(media);
+                    .setSelectedMedia(media);
               }),
             ),
             Expanded(
@@ -46,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
         );
       case Status.ERROR:
         return Center(
-          child: Text('Please try again latter!!!'),
+          child: Text('Please try again later!!!'),
         );
       case Status.INITIAL:
       default:
